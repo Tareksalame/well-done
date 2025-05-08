@@ -1,0 +1,67 @@
+/* جعل القائمة تحتوي على هوامش على الجوانب */
+.slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(123, 184, 175);
+    padding: 10px 0;
+  }
+  
+  /* السماح بالتمرير بسلاسة مع وجود هوامش */
+  .slider {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    width: 100%; /* تصغير العرض لجعل هناك هامش من الجانبين */
+    overflow-x: auto;
+    scrollbar-width: none; /* إخفاء التمرير في فايرفوكس */
+    -ms-overflow-style: none; /* إخفاء التمرير في إنترنت إكسبلورر */
+  }
+  
+  /* إخفاء شريط التمرير في Chrome */
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* تصميم عناصر القائمة */
+  .slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    padding: 15px;
+    border-radius: 50px;
+    /* background: linear-gradient(145deg, #ff7b00, #ff5500); */
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); */
+    /* width: 120px; حجم موحد لكل عنصر */
+    /* height: 120px; */
+  }
+  
+  /* تأثير عند التمرير فوق العنصر
+  .slider-item:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  } */
+  
+  /* تحسين مظهر الصور */
+  .slider-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* تحسين مظهر النص */
+  .slider-text {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
